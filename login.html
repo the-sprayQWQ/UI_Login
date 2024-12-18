@@ -1,0 +1,111 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Remove the line below if you don't want to use TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<!-- Change code below this line -->
+<body>
+
+</body>
+<!-- Change code above this line -->
+<div class="flex">
+    <div class="border">
+        <div class="content">
+            <h1 class="title">Already working together</h1>
+            <p class="detail">Log in to your account and connect with your teammates!</p>
+            <input type="text" class="account" placeholder="youremail@address.com">
+            <button class="arrow-button" onclick="login()">
+                <span>&#8594;</span> <!-- Unicode 右箭头符号 -->
+            </button>
+        </div>
+    </div>
+</div>
+
+
+<style>
+/* Write your CSS code here */
+*{
+    margin: 0;
+    padding: 0;
+}
+.border{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 820px;
+    height: 320px;
+    box-sizing: border-box;
+    background-color: #dce6fa;
+    border-radius: 20px;
+}
+.flex{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.border .content{
+    width: 790px;
+    height: 285px;
+    background: linear-gradient(to right, #4c6fda, #1b3eb8);
+    border-radius: 20px;
+    position: relative;
+}
+
+.content .title{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 69px;
+    text-align: center;
+}
+.content .detail{
+    color:#fff;
+    width: 315px;
+    height: 56px;
+    text-align: center;
+    margin: 0 auto;
+}
+.content .account{
+    display: block;
+    width: 356px;
+    height: 53px;
+    margin: 0 auto;
+    border-radius: 25px;
+    background-color: #7e94df;
+    outline: none;
+    text-indent: 20px;
+    color: #fff;
+}
+.content .account::placeholder{
+    color: #fff;
+}
+.arrow-button{
+    position: absolute;
+    right: 0;
+    left: 527px;
+    top: 176px;
+    bottom: 0;
+    color: #4a496e;
+    border-radius: 50%;
+    background-color: #fff;
+    height: 40px;
+    width: 40px;
+}
+</style>
+
+
+<script>
+    function login(){
+        console.log(123);
+    }
+</script>
+
+</html>
